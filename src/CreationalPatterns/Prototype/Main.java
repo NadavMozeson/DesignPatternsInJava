@@ -6,7 +6,7 @@ public class Main {
         Bike basicBike = bike.clone();
         Workshop workShop = new Workshop();
         Bike advancedBike = workShop.makeJaguar(basicBike);
-        System.out.println(bike.toString());
-        System.out.println(advancedBike.toString());
+        System.out.println(bike.toString()); // -> "Type:Standard, Model: Leopard, Gears: 4"
+        System.out.println(advancedBike.toString()); // -> "Type:Advanced, Model: Jaguar, Gears: 6"
     }
 }
