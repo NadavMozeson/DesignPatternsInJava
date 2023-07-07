@@ -4,6 +4,7 @@ public class BasicWindow implements Window {
     public void displayWindow(){
         System.out.println("Window display");
     }
+
     @Override
     public String getColor() {
         return null;

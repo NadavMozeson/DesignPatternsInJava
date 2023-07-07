@@ -1,7 +1,7 @@
 package StructuralPatterns.DecoratorDP;
 
 public class Decorator implements Window{
-    protected final Window window;
+    private final Window window;
 
     public Decorator(Window window) {
         this.window = window;

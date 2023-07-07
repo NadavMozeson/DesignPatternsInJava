@@ -8,4 +8,7 @@ public class Child {
         this.dad = new Dad();
         this.mom = new Mom();
     }
+    public String getLastName(){
+        return dad.getLastName();
+    }
 }
