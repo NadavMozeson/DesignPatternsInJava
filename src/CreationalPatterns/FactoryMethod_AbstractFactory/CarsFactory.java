@@ -1,4 +1,4 @@
-package CreationalPatterns.FactoryMethod;
+package CreationalPatterns.FactoryMethod_AbstractFactory;
 
 public class CarsFactory implements Factory {
     public Vehicle getVehicle(String name){

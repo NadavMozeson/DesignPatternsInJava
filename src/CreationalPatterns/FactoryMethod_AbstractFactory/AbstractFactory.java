@@ -1,4 +1,4 @@
-package CreationalPatterns.FactoryMethod;
+package CreationalPatterns.FactoryMethod_AbstractFactory;
 
 public class AbstractFactory {
     public Factory getFactory(String name){
