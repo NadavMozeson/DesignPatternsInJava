@@ -1,7 +1,5 @@
 package StructuralPatterns.Proxy;
 
-import java.lang.reflect.Proxy;
-
 public class Main {
     public static void main(String[] args) {
         VideoDownloader videoDownloader = new ProxyVideoDownloader();
