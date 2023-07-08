@@ -33,7 +33,7 @@ public class CollegeIterator implements Iterator{
 
     @Override
     public Student currentStudent() {
-        if (index < students.size()){
+        for (; index < students.size(); index++) {
             if (students.get(index).getType().equals("College")){
                 return students.get(index);
             }

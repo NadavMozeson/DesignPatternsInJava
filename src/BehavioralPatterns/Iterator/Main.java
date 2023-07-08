@@ -8,12 +8,15 @@ public class Main {
         school.addStudent(new Student("Tom", "High School"));
         school.addStudent(new Student("Jack", "High School"));
         school.addStudent(new Student("Maor", "College"));
+
         Iterator highSchoolIterator = school.createIterator("High School");
-        System.out.println("First Student: " + highSchoolIterator.currentStudent().getName());
+        System.out.println("First High School Student: " + highSchoolIterator.currentStudent().getName());
         while (!highSchoolIterator.isLastStudent()){
             System.out.println("High School Student: " + highSchoolIterator.nextStudent().getName());
         }
+
         Iterator collegeIterator = school.createIterator("College");
+        System.out.println("First College Student: " + collegeIterator.currentStudent().getName());
         while (!collegeIterator.isLastStudent()){
             System.out.println("College Student: " + collegeIterator.nextStudent().getName());
         }
