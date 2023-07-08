@@ -1,5 +1,5 @@
 package BehavioralPatterns.StateDP;
 
 public interface MobileAlertState {
-    void alert(AlertStateContext ctx);
+    void alert(Phone phone);
 }

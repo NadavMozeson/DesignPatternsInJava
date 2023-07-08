@@ -2,7 +2,7 @@ package BehavioralPatterns.StateDP;
 
 public class Main {
     public static void main(String[] args){
-        AlertStateContext stateContext = new AlertStateContext();
+        Phone stateContext = new Phone();
         stateContext.alert();
         stateContext.alert();
         stateContext.setState(new Silent());

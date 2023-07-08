@@ -1,11 +1,16 @@
 package BehavioralPatterns.StateDP;
 
-public class AlertStateContext {
+public class Phone {
     private MobileAlertState currentState;
-    public AlertStateContext() {
-        currentState = new Vibration(); }
+
+    public Phone() {
+        currentState = new Vibration();
+    }
+
     public void setState(MobileAlertState state) {
-        currentState = state; }
+        currentState = state;
+    }
+
     public void alert() { currentState.alert(this); }
 }
 
