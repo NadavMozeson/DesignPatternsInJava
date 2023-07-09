@@ -8,8 +8,6 @@ public class CarsFactory implements Factory {
             return new Audi();
         } else if (name.equals("Jeep")) {
             return new Jeep();
-        } else if (name.equals("Toyota")) {
-            return new Toyota();
         }
         return null;
     }

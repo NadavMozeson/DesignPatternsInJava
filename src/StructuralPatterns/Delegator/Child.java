@@ -1,13 +1,14 @@
 package StructuralPatterns.Delegator;
 
-public class Child {
+public class Child implements IDad, IMom {
     private Dad dad;
     private Mom mom;
 
-    public Child(){
-        this.dad = new Dad();
-        this.mom = new Mom();
+    public Child(String lastName){
+        this.dad = new Dad(lastName);
+        this.mom = new Mom(lastName);
     }
+    @Override
     public String getLastName(){
         return dad.getLastName();
     }

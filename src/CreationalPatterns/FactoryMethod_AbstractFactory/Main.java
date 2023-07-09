@@ -1,6 +1,7 @@
 package CreationalPatterns.FactoryMethod_AbstractFactory;
 
 public class Main {
+    private Car car;
     public static void main(String[] args) {
         AbstractFactory abstractFactory = new AbstractFactory();
         Factory factory1 = abstractFactory.getFactory("Cars");
